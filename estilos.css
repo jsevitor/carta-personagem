@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,700&family=Rubik:wght@300&family=Wallpoet&display=swap');
+
+body {
+    margin: 20;
+    background-color: rgb(38, 75, 77);
+    background-image: url('imagens/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    /*margin-top: 10%;*/
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta {
+    width: 300px;
+    height: 520px;
+    border: 10px outset rgb(184, 150, 38);
+    border-radius: 5px;
+    margin: 20px;
+    background-color: rgb(44, 33, 32);
+    box-shadow: 10px 5px 5px black;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+
+.carta-frente,
+.carta-verso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.carta-frente {
+    background-image: url('imagens/frente_carta.png');
+    transform: rotateY(180deg);
+    
+}
+
+.carta-verso {
+    background-image: url('imagens/verso_carta.png');
+    background-size: 300px 520px;   
+}
+
+.carta:hover {
+    transform: rotateY(180deg);
+}
+
+.foto {
+    width: 65%;
+    height: 40%;   
+    border: 6px outset #904623; 
+    margin: auto auto 15px auto;
+    box-shadow: 5px 5px 5px black;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+}
+
+.nome {
+    width: 200px;
+    height: auto;
+    background-color: #F8C934;
+    border: 2px outset #F8C934;
+    margin: 15px 0px 15px 0px;
+}
+
+h4#nome {
+    font-family: 'Wallpoet', cursive;
+    font-weight: 400;
+    font-size: 20;
+    color: black;
+    text-align: right;
+    margin: auto;
+}
+
+h5 {
+    font-family: 'Wallpoet', cursive;
+    font-weight: 400;
+    text-align: left;
+    margin: 0px 5px;
+}
+
+p {
+    font-family: "Rubik";
+    font-style: italic;
+    font-size: 12;
+    text-align: center;
+    color: whitesmoke;
+    margin: 5px 10px 5px 10px;
+    padding-bottom: 5px;
+}
+
+.bio {
+    width: 92%;
+    height: auto;
+    background-color: rgb(144, 70, 35, 0.8);
+    border: 2px outset rgb(144, 70, 35);
+    margin: 10px 10px 5px 10px;
+    box-shadow: 5px 5px 5px black;   
+}
+
+.habilidade {
+    width: 42%;
+    height: auto;
+    background-color: rgb(56, 144, 119);
+    border: 2px outset rgb(56, 144, 119);
+    margin: 5px auto auto 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.fraqueza {
+    width: 42%;
+    height: auto;
+    background-color: rgb(56, 144, 119);
+    border: 2px outset rgb(56, 144, 119);
+    margin: 5px 10px 5px auto; 
+    box-shadow: 5px 5px 5px black;
+}
+
+h5#titulos {
+    color: aliceblue;
+    margin-top: 3px;
+    font-size: 13;
+    text-align: center;
+}
+
+.caracteristicas{
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.indice {
+    width: 90%;
+    height: 15%;
+    background-color: rgba(121, 97, 66, 0.9);
+    border: 5px ridge rgb(44, 33, 32);
+    border-radius: 5px;
+    margin: 5px 10px 10px 10px;
+    padding: 2px;
+    display: inline-flex;
+    box-shadow: 5px 5px 5px black;
+}
+
+.topicos {
+    width: 65%;
+    margin: 5px 5px 5px 5px;
+    text-align: justify;   
+}
+
+.escala {
+    width: 30%;
+    height: 10%;
+    display: block;
+    margin: 5px 0px 6px 0px;
+}
+
+h5#topico {
+    font-size: 14;
+    font-style: italic;
+    color: aquamarine;
+    margin: 3px 5px 10px 5px;
+}
+
+img#icone {
+    margin-top: 3px;
+    width: 12px;
+    height: 16px;
+}
